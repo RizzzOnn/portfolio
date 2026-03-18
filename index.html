@@ -1,128 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Rijan Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rijan Portfolio</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-<h1>Rijan Manandhar</h1>
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <a href="index.html">
+      <img src="media/logo/IMG_6843.JPG.jpeg" class="nav-logo">
+    </a>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#media">Media</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="photography.html">Photography</a>
+      <a href="project.html">Project</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
-<!-- HERO SPLIT LAYOUT -->
-<section id="home" class="hero">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Rijan Manandhar</h1>
+      <p>BIT (Hons) Student | Aspiring Frontend Developer | Senior Data Entry & Education Analyst</p>
+    </div>
 
-<div class="hero-text">
-<h2>Hello, I'm Rijan</h2>
-<p>BIT Student passionate about UI/UX and web design.</p>
-<button>View Portfolio</button>
-</div>
+    <div class="hero-img">
+      <img src="media/self/me1.jpeg">
+    </div>
+  </section>
 
-<div class="hero-img">
-<img src="images/profile.jpg">
-</div>
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a BIT (Hons) student passionate about Web Development,
+      Data Analysis & Engineering, and building modern digital experiences.
+    </p>
+  </section>
 
-</section>
+  <!-- GALLERY -->
+  <section class="gallery">
+    <h2>My Moments</h2>
 
-<!-- ABOUT (F LAYOUT STYLE) -->
+    <div class="gallery-grid">
+      <img src="media/self/me7.JPG">
+      <img src="media/self/me2.PNG">
+      <img src="media/self/me3.jpeg">
+      <img src="media/self/me4.jpeg">
+      <img src="media/self/me5.png">
+      <img src="media/self/me6.JPG">
+    </div>
+  </section>
 
-<section id="about">
+  <!-- HOBBIES + CV -->
+  <section class="split">
 
-<h2>About Me</h2>
+    <div class="left">
+      <h2>Hobbies</h2>
+      <p>Photography, Coding, Creative Design</p>
+      <p>Gaming, Basketball, Volleyball</p>
+    </div>
 
-<p>
-I am a BIT student studying at Lincoln International College.
-I enjoy creating modern UI designs and web interfaces.
-</p>
+    <div class="cv-box">
+      <h2>CV</h2>
+      <a href="Rijan - CV.pdf" class="btn" target="_blank">Download CV</a>
+    </div>
 
-<img src="images/about.jpg">
-
-<p>
-My interests include web design, UI/UX, and building interactive websites.
-</p>
-
-</section>
-
-<!-- PROJECTS ZIGZAG LAYOUT -->
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="project">
-<div>
-<h3>Portfolio Website</h3>
-<p>A responsive personal portfolio.</p>
-</div>
-
-<img src="images/project1.jpg">
-</div>
-
-<div class="project reverse">
-<div>
-<h3>UI Design</h3>
-<p>Interface designed using Figma.</p>
-</div>
-
-<img src="images/project2.jpg">
-</div>
-
-</section>
-
-<!-- AUDIO & VIDEO -->
-
-<section id="media">
-
-<h2>Media</h2>
-
-<h3>Audio Introduction</h3>
-
-<audio controls>
-<source src="audio/intro.mp3">
-</audio>
-
-<h3>Project Demo</h3>
-
-<video width="400" controls>
-<source src="video/demo.mp4">
-</video>
-
-</section>
-
-<!-- CONTACT FORM -->
-
-<section id="contact">
-
-<h2>Contact Me</h2>
-
-<form id="contactForm">
-
-<label>Name</label>
-<input type="text" required>
-
-<label>Email</label>
-<input type="email" required>
-
-<label>Message</label>
-<textarea required></textarea>
-
-<button type="submit">Send</button>
-
-</form>
-
-</section>
-
-<script src="js/script.js"></script>
+  </section>
 
 </body>
 </html>
